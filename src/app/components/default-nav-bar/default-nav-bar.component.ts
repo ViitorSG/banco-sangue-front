@@ -42,12 +42,16 @@ export class DefaultNavBarComponent {
     try {
       const candidates = await CandidateService.getCandidates();
       if (candidates) {
-        console.log('Candidates fetched', candidates);
+        this.refreshPage()
       } else {
         console.error('Error fetching candidates');
       }
     } catch (error) {
       console.error('Error fetching candidates', error);
     }
+  }
+
+  refreshPage() {
+    window.location.reload();
   }
 }
