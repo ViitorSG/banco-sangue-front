@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 34px;
+    margin-left: 34px;
+    margin-bottom: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.default-table {
+    background: #FFE9E8;
+    border-radius: 30px;
+    margin: 0 auto;
+    width: 100%;
+    overflow: auto;
+}
+
+.mat-mdc-table {
+    background-color: transparent;
+    color: white;
+}

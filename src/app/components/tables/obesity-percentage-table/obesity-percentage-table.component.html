@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="default-table">
+        <table mat-table [dataSource]="dataSource">
+            <ng-container matColumnDef="genero">
+                <th mat-header-cell *matHeaderCellDef> Gênero</th>
+                <td mat-cell *matCellDef="let element"> {{ element.genero }}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="porcentagem_obesidade">
+                <th mat-header-cell *matHeaderCellDef> Porcentagem de Obesidade</th>
+                <td mat-cell *matCellDef="let element"> {{ element.porcentagem_obesidade }}</td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div>
+</div>

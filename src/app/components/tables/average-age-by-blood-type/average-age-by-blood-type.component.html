@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="default-table">
+        <table mat-table [dataSource]="dataSource">
+            <ng-container matColumnDef="blood_type">
+                <th mat-header-cell *matHeaderCellDef> Tipo Sanguineo</th>
+                <td mat-cell *matCellDef="let element"> {{ element.blood_type }}</td>
+            </ng-container>
+
+            <ng-container matColumnDef="age_average">
+                <th mat-header-cell *matHeaderCellDef> Média de idade</th>
+                <td mat-cell *matCellDef="let element"> {{ element.age_average }}</td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div>
+</div>

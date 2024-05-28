@@ -1,0 +1,70 @@
+.default-nav-bar {
+    padding: 65px 65px 0 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    height: 56px;
+    width: auto;
+}
+
+.logo-text {
+    font-size: 16px;
+    color: #EB3738;
+    font-family: 'Quando', sans-serif;
+}
+
+.project-name {
+    font-size: 26px;
+    font-weight: bold;
+    color: #EB3738;
+    font-family: 'Quando', sans-serif;
+}
+
+.add-json-button {
+    background-color: #EB3738 !important;
+    color: white !important;
+    border-radius: 12px !important;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.menuText {
+    font-size: 16px;
+    color: #EB3738;
+    font-family: 'Quando', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #EB3738;
+}
+
+@media screen and (max-width: 768px) {
+    .default-nav-bar {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .default-nav-bar {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}

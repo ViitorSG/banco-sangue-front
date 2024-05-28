@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="col">
+        <h4>Selecione o relatório desejado</h4>
+        <mat-form-field>
+            <mat-label>Relatórios</mat-label>
+            <select matNativeControl required [value]="defaultValue" (change)="onChange($event)">
+                <option *ngFor="let report of reports" [value]="report.value">{{report.viewValue}}</option>
+            </select>
+        </mat-form-field>
+        <app-count-by-state-table *ngIf="selectedReport === 'candidatesByState'"></app-count-by-state-table>
+        <app-average-age-by-blood-type-table *ngIf="selectedReport === 'averageAgeByBloodType' "></app-average-age-by-blood-type-table>
+        <app-obesity-percentage-by-gender-table *ngIf="selectedReport === 'obesityPercentage'"></app-obesity-percentage-by-gender-table>
+        <app-potential-donors-by-blood-type-table *ngIf="selectedReport === 'potentialDonors'"></app-potential-donors-by-blood-type-table>
+        <app-average-imc-age-table *ngIf="selectedReport === 'imcByAgeRange'"></app-average-imc-age-table>
+    </div>
+</div>
+

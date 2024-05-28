@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-right: 34px;
+    margin-left: 34px;
+
+}
+
+.default-table {
+    background: #FFE9E8;
+    border-radius: 30px;
+    margin: 0 auto;
+    max-width: 1300px;
+    overflow: auto;
+}
+
+.mat-mdc-table {
+    background-color: transparent;
+    color: white;
+}
+
+.mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+}

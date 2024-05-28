@@ -1,0 +1,12 @@
+<mat-toolbar class="default-nav-bar">
+    <div class="row menuText">
+        <a routerLink="/home">Candidatos</a>
+        <a routerLink="/candidate-reports">Relatórios</a>
+    </div>
+    <div class="logo-container">
+        <img src="/assets/svg/logo.svg" alt="{{ strings.logoAltText }}" height="56" width="56">
+        <span class="logo-text">{{ strings.logoText }}</span>
+    </div>
+    <input type="file" (change)="onFileSelected($event)" style="display: none;" #fileInput>
+    <button mat-raised-button class="add-json-button" (click)="fileInput.click()">{{ strings.addFileButtonText }}</button>
+</mat-toolbar>

@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Quando", sans-serif; }
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-floating-label {
+    color: #FFE9E8;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: #FFE9E8 !important;
+    border-radius: 30px;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-notched-outline {
+    border: none !important;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline {
+    border: none !important;
+}
+
+.mdc-text-field--filled .mdc-line-ripple {
+    display: none !important;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-notched-filled__leading,.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-notched-filled__notch,.mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-notched-filled__trailing {
+    border-color: #FFE9E8 !important;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-filled .mdc-notched-filled__leading,.mdc-text-field--filled:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-filled .mdc-notched-filled__notch,.mdc-text-field--filled:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-filled .mdc-notched-filled__trailing {
+    border-color: #FFE9E8 !important;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled):hover .mdc-floating-label {
+    background-color: transparent !important;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled):hover .mdc-text-field__input {
+    background-color: transparent;
+}
